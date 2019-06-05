@@ -1,0 +1,8 @@
+2019-06-03 13:55:42 INFO  Main:14 - Lancement du jeu
+2019-06-03 13:55:42 INFO  JeuRecherche:27 - Vous êtes dans le menu du jeu
+2019-06-03 13:55:46 INFO  JeuRechercheChallenger:31 - Vous êtes dans le mode Challenger
+2019-06-03 13:55:46 DEBUG JeuRechercheChallenger:57 - le nombre de la combinaison est : 4
+2019-06-03 13:55:46 DEBUG JeuRechercheChallenger:67 - La combinaison secrète de l'ordinateur est : [2, 0, 6, 1]
+2019-06-03 13:55:46 INFO  JeuRechercheChallenger:76 - Vous êtes en mode développeur
+2019-06-03 13:55:46 DEBUG JeuRechercheChallenger:85 - le nombre d'essai est : 10
+2019-06-03 13:55:48 ERROR JeuRechercheChallenger:109 - Erreur de saisie. Veuillez entrer des chiffres java.lang.NumberFormatException: For input string: "f"
