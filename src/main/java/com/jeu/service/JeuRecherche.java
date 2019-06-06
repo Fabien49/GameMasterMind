@@ -49,7 +49,7 @@ public class JeuRecherche {
             } else {
                 System.out.println("Vous n'avez pas choisi parmi les choix proposés");
                 // il oblige l'utilisateur rentre son nouveau choix et arrête la boucle
-                logger.error("Vous n'avez pas choisi parmis les choix proposés");
+                logger.warn("Vous n'avez pas choisi parmis les choix proposés");
                 choice = sc.next();
             }
         }

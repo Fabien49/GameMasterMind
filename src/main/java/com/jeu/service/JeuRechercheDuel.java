@@ -309,7 +309,7 @@ public class JeuRechercheDuel {
                 System.exit(0);
             } else {
                 System.out.println("Vous n'avez pas choisi parmi les choix proposés");
-                logger.error("Vous n'avez pas choisi parmis les choix proposés");
+                logger.warn("Vous n'avez pas choisi parmis les choix proposés");
                 // il oblige l'utilisateur à rentrer son nouveau choix et arrête la boucle
                 choice = sc.next();
             }

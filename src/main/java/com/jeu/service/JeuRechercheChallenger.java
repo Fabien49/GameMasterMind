@@ -202,7 +202,7 @@ public class JeuRechercheChallenger {
                 System.exit(0);
             } else {
                 System.out.println("Vous n'avez pas choisi parmi les choix proposés");
-                logger.error("Vous n'avez pas choisi parmis les choix proposés");
+                logger.warn("Vous n'avez pas choisi parmis les choix proposés");
                 choice = sc.next();
             }
         }
