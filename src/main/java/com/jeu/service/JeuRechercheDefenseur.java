@@ -125,10 +125,10 @@ public class JeuRechercheDefenseur<menu> {
                         int valeurMoins = reponseOrdi.get(i) +1;
                         int valeurPlus = reponseOrdi.get(i) -1;
 
-                        if (reponseJoueur.get(i).equals("+")) {
+                        if (reponseJoueur.get(i).equals("-")) {
                             newList.add(valeurMoins);
                             logger.debug("La réponse de l'ordinateur est " + newList);
-                        } else if (reponseJoueur.get(i).equals("-")) {
+                        } else if (reponseJoueur.get(i).equals("+")) {
                             newList.add(valeurPlus);
                             logger.debug("La réponse de l'ordinateur est " + newList);
                         } else if (reponseJoueur.get(i).equals("=")) {

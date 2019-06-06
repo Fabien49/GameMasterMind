@@ -178,10 +178,10 @@ public class JeuRechercheDuel {
                         int valeurMoins = reponseOrdi.get(n) +1;
                         int valeurPlus = reponseOrdi.get(n) -1;
 
-                        if (reponseJoueur.get(n).equals("+")) {
+                        if (reponseJoueur.get(n).equals("-")) {
                             newList.add(valeurMoins);
                             logger.debug("La réponse de l'ordinateur est " + newList);
-                        } else if (reponseJoueur.get(n).equals("-")) {
+                        } else if (reponseJoueur.get(n).equals("+")) {
                             newList.add(valeurPlus);
                             logger.debug("La réponse de l'ordinateur est " + newList);
                         } else if (reponseJoueur.get(n).equals("=")) {

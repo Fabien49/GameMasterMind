@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a558a736-5662-4270-b91c-030ad5788fc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/gameMastermind.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gameMastermind.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRecherche.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRecherche.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheChallenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheChallenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDefenseur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDefenseur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDuel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDuel.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+            <state relative-caret-position="340">
+              <caret line="134" column="33" lean-forward="true" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1743">
-              <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+            <state relative-caret-position="447">
+              <caret line="134" column="60" lean-forward="true" selection-start-line="134" selection-start-column="60" selection-end-line="134" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2831">
-              <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+            <state relative-caret-position="277">
+              <caret line="183" column="65" selection-start-line="183" selection-start-column="65" selection-end-line="183" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,10 +172,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/outils/Config.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" />
       </list>
     </option>
   </component>
@@ -317,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559828881412</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="javadoc">
+      <created>1559854184617</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559854184617</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -333,7 +343,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -342,7 +352,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3347779" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40086675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -365,7 +375,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Javadoc pour les classes JeuRechercheChallenger,JeuRechercheDefenseur et JeuRechercheDuel" />
     <MESSAGE value="Changement de titre du projet&#10;lien vers GitHub dans le README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement de titre du projet&#10;lien vers GitHub dans le README" />
+    <MESSAGE value="javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="javadoc" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -766,26 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2831">
-          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1743">
-          <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -825,8 +816,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        <state relative-caret-position="340">
+          <caret line="134" column="33" lean-forward="true" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="134" column="60" lean-forward="true" selection-start-line="134" selection-start-column="60" selection-end-line="134" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="183" column="65" selection-start-line="183" selection-start-column="65" selection-end-line="183" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
