@@ -84,7 +84,10 @@ La version Java 1.8 minimum est requise pour lancer l'application
 
 Le lancement du jeu se fait à partir du fichier .jar
 
-## Lien vers Git
+## Lien vers GitHub
+
+Le lien vers GitHub:
+https://github.com/Fabien49/GameMasterMind
 
 ## Auteur:
 Fabien Chapeau pour Openclassrooms
