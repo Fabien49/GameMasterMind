@@ -8,6 +8,17 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Cette classe regroupe toutes les fonctionalités du mode Duel.
+ *  * les spécifications du mode duel sont:
+ * - Le joueur  et l'intelligence artificielle s'affrontent, ils définissent chacun une combianaison secrète.
+ * - A tour de rôle ils essaient de trouver la combinaison de l'autre.
+ * - Le joueur  et l'intelligence artificielle indiquent pour chaque chiffre de la combinaison proposée si le chiffre de sa combinaison est plus grand (+), plus petit (-) ou si c’est le bon (=).
+ * - Le joueur et l’intelligence artificielle font une autre proposition en se basant sur la réponse fournit par le joueur.
+ * - Le premier a trouver la combianaison secrète de l'autre a gagné
+ * - Il y a un nombre limité d’essais.
+ */
+
 public class JeuRechercheDuel {
 
     private final static Logger logger = Logger.getLogger(JeuRechercheDuel.class);
