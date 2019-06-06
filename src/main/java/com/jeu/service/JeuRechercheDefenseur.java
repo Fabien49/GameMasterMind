@@ -35,7 +35,7 @@ public class JeuRechercheDefenseur<menu> {
 
             System.out.println("Bienvenue dans le mode Defenseur");
 
-            /**
+            /*
              * Mode développeur ou non en fonction du fochier confi.properties
              * Si mode developpeur activé, indique qu'on est en mode dev
              */
@@ -46,7 +46,7 @@ public class JeuRechercheDefenseur<menu> {
                 logger.info("Vous êtes en mode développeur");
             }
 
-            /**
+            /*
              * Création de la liste de l'ordinateur "combinaisonSecreteJoueur avec la collection d'arraylist"
              * Creation de chiffres aléatoire et insertion dans la liste créée
              */
@@ -56,7 +56,7 @@ public class JeuRechercheDefenseur<menu> {
             String nbsaisi = sc.next();
             List<Integer> combinaisonSecreteJoueur = combiJoueurList(nbsaisi);
 
-            /**
+            /*
              * montre la combinaison secrète si mode dev
              */
 
@@ -99,7 +99,7 @@ public class JeuRechercheDefenseur<menu> {
 
             System.out.println("L'ordinateur a " +confNbEssai + " essai(s) pour trouver la combinaison secrète" );
 
-            /**
+            /*
              * Boucle permettant que l'ordinateur ajuste sa combinaison en fonction de la réponse du joueur et ceux tant que le nomùbre d'essai > 0
              * Si la combinaison de l'ordinateur est égale à la combinaison du joueur, ça carrête la boucle et propose le menu de fin de jeu
              */

@@ -30,7 +30,7 @@ public class JeuRechercheChallenger {
 
         logger.info("Vous êtes dans le mode Challenger");
 
-        /**
+        /*
          * création d'une liste d'entier avec la collection d'arraylist contenant la combiansiaon secrète de l'ordinateur
          */
 
@@ -56,7 +56,7 @@ public class JeuRechercheChallenger {
 
         logger.debug("le nombre de la combinaison est : " +configCombinaison);
 
-        /**
+        /*
          * Combinaison aléatoire de 'lordinateur
          */
 
@@ -66,7 +66,7 @@ public class JeuRechercheChallenger {
         }
         logger.debug("La combinaison secrète de l'ordinateur est : " +combinaisonSecreteOrdi);
 
-        /**
+        /*
          * Mode développeur ou non en fonction du fochier confi.properties
          * Si mode developpeur activé, il indique qu'on est en mode dev et montre la combinaison secrète
          */

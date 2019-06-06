@@ -15,7 +15,7 @@ import java.util.Scanner;
  * - A tour de rôle ils essaient de trouver la combinaison de l'autre.
  * - Le joueur  et l'intelligence artificielle indiquent pour chaque chiffre de la combinaison proposée si le chiffre de sa combinaison est plus grand (+), plus petit (-) ou si c’est le bon (=).
  * - Le joueur et l’intelligence artificielle font une autre proposition en se basant sur la réponse fournit par le joueur.
- * - Le premier a trouver la combianaison secrète de l'autre a gagné
+ * - Le premier a trouver la combinaison secrète de l'autre a gagné
  * - Il y a un nombre limité d’essais.
  */
 
@@ -31,13 +31,13 @@ public class JeuRechercheDuel {
 
             logger.info("Vous êtes dans le mode duel");
 
-            /**
+            /*
              * Menu
              */
 
             System.out.println("Bienvenue dans le mode Duel");
 
-            /**
+            /*
              * Mode développeur ou non en fonction du fochier confi.properties
              * Si mode developpeur activé, indique qu'on est en mode dev
              */
@@ -65,7 +65,7 @@ public class JeuRechercheDuel {
             String nbsaisi = sc.next();
             List<Integer> combinaisonSecreteJoueur = combiSecreteJoueurList(nbsaisi);
 
-            /**
+            /*
              * Combianaison aléatoire de l'ordinateur
              */
 
@@ -81,7 +81,7 @@ public class JeuRechercheDuel {
 
             logger.debug("La combinaison secrète de l'ordinateur est " + combinaisonSecreteOrdi);
 
-            /**
+            /*
              * montre les combinaisons secrètes si mode dev
              */
 
@@ -103,7 +103,7 @@ public class JeuRechercheDuel {
 
             System.out.println("Il vous reste " +confNbEssai + " essai(s) pour trouver la combinaison" );
 
-            /**
+            /*
              * Boucle permettant que le joueur et l'ordinateur rentrent leur comnbinaison respective et que chacun donnent sa réponse tant que le nombre d'essai est > 0
              * Si la combinaison du joueur est égale à la combinaison de l'ordinateur et /ou que la combinaison de l'ordianteur est égale à la combinaison secrète de l'ordinateur,
              * ça carrête la boucle et propose le menu de fin de jeu

@@ -4,17 +4,21 @@ import org.apache.log4j.Logger;
 
 import java.util.Scanner;
 
+
+/**
+ * Cette classe contient le menu du jeu
+ */
+
 public class JeuRecherche {
 
     private final static Logger logger = Logger.getLogger(JeuRecherche.class);
 
-
     public JeuRecherche() {
-
     }
 
     /**
-     * Menu du jeu recherche +/-
+     * Cette methode est le menu de l'application
+     * L'utilisateur saisit son choix parmis ceux proposés pour rentrer dans l'un des modes.
      */
 
     public static void rechercheMenu() {
