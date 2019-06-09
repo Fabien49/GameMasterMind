@@ -98,7 +98,7 @@ public class JeuRechercheChallenger {
                     boolean saisieOk = true;
                     while (saisieOk) {
 
-                        System.out.println("Veuillez entrer votre combianaison : ");
+                        System.out.println("Veuillez entrer votre combinaison : ");
                         Scanner sc = new Scanner(System.in);
                         String nbsaisi = sc.next();
 
@@ -109,6 +109,7 @@ public class JeuRechercheChallenger {
                             logger.error("Erreur de saisie. Veuillez entrer des chiffres " + exception);
                         }
                     }
+
 
                     String str = new String();
 

@@ -25,7 +25,7 @@ public class JeuRechercheDefenseur<menu> {
     public JeuRechercheDefenseur(){
         }
 
-        public static void rechercheDefenseur(){
+        public static void rechercheDefenseur() {
 
             logger.info("Vous êtes dans le mode défenseur");
 
@@ -50,108 +50,120 @@ public class JeuRechercheDefenseur<menu> {
              * Création de la liste de l'ordinateur "combinaisonSecreteJoueur avec la collection d'arraylist"
              * Creation de chiffres aléatoire et insertion dans la liste créée
              */
+            List<Integer> combinaisonSecreteJoueur = new ArrayList<>();
+            boolean saisieOk = true;
+            while (saisieOk) {
 
-            System.out.println("Veuillez saisir votre combinaison secrète à 4 chiffres");
-            Scanner sc = new Scanner(System.in);
-            String nbsaisi = sc.next();
-            List<Integer> combinaisonSecreteJoueur = combiJoueurList(nbsaisi);
-
-            /*
-             * montre la combinaison secrète si mode dev
-             */
-
-            if (configDeveloppeur) {
-                System.out.println("La combinaison secrète du joueur est : " + combinaisonSecreteJoueur);
-            }
-
-            List<Integer> reponseOrdi = new ArrayList<Integer>();
-            Random rand = new Random();
-            int max = 9;
-            int min = 0;
-            String configString = Config.getConfigValue("nbCombinaison");
-            int configCombinaison = 0;
-            int nb= 0;
-
-            if (configString.equals("")) {
-                configCombinaison = 4;
-            }else {
-                configCombinaison = Integer.valueOf(Config.getConfigValue("nbCombinaison"));
-            }
-
-            logger.debug("le nombre de la combinaison est : " +configCombinaison);
+                System.out.println("Veuillez saisir votre combinaison secrète à 4 chiffres");
+                Scanner sc = new Scanner(System.in);
+                String nbsaisi = sc.next();
 
 
-            while (nb < configCombinaison) {
-
-                reponseOrdi.add(rand.nextInt(max - min + 1) + min);
-                nb++;
-            }
-
-            logger.debug("La combinaison de l'ordinateur est : " + reponseOrdi);
-
-            System.out.println("La combinaison de l'ordinateur est : " + reponseOrdi);
-
-            int nbessais = 0;
-            int reste;
-            int confNbEssai = Integer.valueOf(Config.getConfigValue("nbEssai"));
-
-            logger.debug("le nombre d'essai est : " +confNbEssai);
-
-            System.out.println("L'ordinateur a " +confNbEssai + " essai(s) pour trouver la combinaison secrète" );
-
-            /*
-             * Boucle permettant que l'ordinateur ajuste sa combinaison en fonction de la réponse du joueur et ceux tant que le nomùbre d'essai > 0
-             * Si la combinaison de l'ordinateur est égale à la combinaison du joueur, ça carrête la boucle et propose le menu de fin de jeu
-             */
-
-            while (nbessais < confNbEssai) {
-
-                if (combinaisonSecreteJoueur.equals(reponseOrdi)) {
-                    List<String> reponseJoueur = saisieReponseJoueur(reponseOrdi, combinaisonSecreteJoueur);
-                    System.out.println("" + reponseJoueur);
-                    System.out.println("Dommage vous avez perdu");
-                    System.out.println("L'ordinateur a trouvé votre combinaison secrète en " + nbessais + " essai(s)");
-                    System.out.println("La solution trouvé par l'ordinateur l'ordinateur est : " + reponseOrdi);
-                    logger.debug("L'ordinateur a trouvé la réponse : " + reponseOrdi + " en " + nbessais + " essais");
-                    menuFinDeJeu();
-                    break;
-
-                } else {
-                    List<String> reponseJoueur = saisieReponseJoueur(reponseOrdi, combinaisonSecreteJoueur);
-                    List<Integer> newList = new ArrayList<Integer>();
-
-                    for (int i = 0; i < reponseJoueur.size(); i++) {
-
-                        int valeurMoins = reponseOrdi.get(i) +1;
-                        int valeurPlus = reponseOrdi.get(i) -1;
-
-                        if (reponseJoueur.get(i).equals("-")) {
-                            newList.add(valeurMoins);
-                            logger.debug("La réponse de l'ordinateur est " + newList);
-                        } else if (reponseJoueur.get(i).equals("+")) {
-                            newList.add(valeurPlus);
-                            logger.debug("La réponse de l'ordinateur est " + newList);
-                        } else if (reponseJoueur.get(i).equals("=")) {
-                            newList.add(reponseOrdi.get(i));
-                            logger.debug("La réponse de l'ordinateur est " + newList);
-                        }
-                    }
-                    reponseOrdi.clear();
-                    reponseOrdi.addAll(newList);
-
-                    System.out.println("Le réponse du joueur est : " + reponseJoueur);
-                    System.out.println("La nouvelle combinaison de l'ordinateur est : " + reponseOrdi);
-                    logger.debug("La nouvelle combinaison de l'ordinateur est : " +reponseOrdi);
-                    nbessais = nbessais + 1;
-
-                    reste = confNbEssai - nbessais;
-                    logger.debug("Il reste : " + reste + " essais");
-                    System.out.println("Il vous reste " + reste + " essai(s)");
+                try {
+                    combinaisonSecreteJoueur = combiJoueurList(nbsaisi);
+                    saisieOk = false;
+                } catch (NumberFormatException exception) {
+                    logger.error("Erreur de saisie. Veuillez entrer des chiffres " + exception);
                 }
             }
-            System.out.println("L'ordianateur n'a pas réussi à trouver la combinaison secrète");
-            menuFinDeJeu();
-        }
+
+                /*
+                 * montre la combinaison secrète si mode dev
+                 */
+
+                if (configDeveloppeur) {
+                    System.out.println("La combinaison secrète du joueur est : " + combinaisonSecreteJoueur);
+                }
+
+
+                List<Integer> reponseOrdi = new ArrayList<Integer>();
+                Random rand = new Random();
+                int max = 9;
+                int min = 0;
+                String configString = Config.getConfigValue("nbCombinaison");
+                int configCombinaison = 0;
+                int nb = 0;
+
+                if (configString.equals("")) {
+                    configCombinaison = 4;
+                } else {
+                    configCombinaison = Integer.valueOf(Config.getConfigValue("nbCombinaison"));
+                }
+
+                logger.debug("le nombre de la combinaison est : " + configCombinaison);
+
+
+                while (nb < configCombinaison) {
+
+                    reponseOrdi.add(rand.nextInt(max - min + 1) + min);
+                    nb++;
+                }
+
+                logger.debug("La combinaison de l'ordinateur est : " + reponseOrdi);
+
+                System.out.println("La combinaison de l'ordinateur est : " + reponseOrdi);
+
+                int nbessais = 0;
+                int reste;
+                int confNbEssai = Integer.valueOf(Config.getConfigValue("nbEssai"));
+
+                logger.debug("le nombre d'essai est : " + confNbEssai);
+
+                System.out.println("L'ordinateur a " + confNbEssai + " essai(s) pour trouver la combinaison secrète");
+
+                /*
+                 * Boucle permettant que l'ordinateur ajuste sa combinaison en fonction de la réponse du joueur et ceux tant que le nomùbre d'essai > 0
+                 * Si la combinaison de l'ordinateur est égale à la combinaison du joueur, ça carrête la boucle et propose le menu de fin de jeu
+                 */
+
+                while (nbessais < confNbEssai) {
+
+                    if (combinaisonSecreteJoueur.equals(reponseOrdi)) {
+                        List<String> reponseJoueur = saisieReponseJoueur(reponseOrdi, combinaisonSecreteJoueur);
+                        System.out.println("" + reponseJoueur);
+                        System.out.println("Dommage vous avez perdu");
+                        System.out.println("L'ordinateur a trouvé votre combinaison secrète en " + nbessais + " essai(s)");
+                        System.out.println("La solution trouvé par l'ordinateur l'ordinateur est : " + reponseOrdi);
+                        logger.debug("L'ordinateur a trouvé la réponse : " + reponseOrdi + " en " + nbessais + " essais");
+                        menuFinDeJeu();
+                        break;
+
+                    } else {
+                        List<String> reponseJoueur = saisieReponseJoueur(reponseOrdi, combinaisonSecreteJoueur);
+                        List<Integer> newList = new ArrayList<Integer>();
+
+                        for (int i = 0; i < reponseJoueur.size(); i++) {
+
+                            int valeurMoins = reponseOrdi.get(i) + 1;
+                            int valeurPlus = reponseOrdi.get(i) - 1;
+
+                            if (reponseJoueur.get(i).equals("-")) {
+                                newList.add(valeurMoins);
+                                logger.debug("La réponse de l'ordinateur est " + newList);
+                            } else if (reponseJoueur.get(i).equals("+")) {
+                                newList.add(valeurPlus);
+                                logger.debug("La réponse de l'ordinateur est " + newList);
+                            } else if (reponseJoueur.get(i).equals("=")) {
+                                newList.add(reponseOrdi.get(i));
+                                logger.debug("La réponse de l'ordinateur est " + newList);
+                            }
+                        }
+                        reponseOrdi.clear();
+                        reponseOrdi.addAll(newList);
+
+                        System.out.println("Le réponse du joueur est : " + reponseJoueur);
+                        System.out.println("La nouvelle combinaison de l'ordinateur est : " + reponseOrdi);
+                        logger.debug("La nouvelle combinaison de l'ordinateur est : " + reponseOrdi);
+                        nbessais = nbessais + 1;
+
+                        reste = confNbEssai - nbessais;
+                        logger.debug("Il reste : " + reste + " essais");
+                        System.out.println("Il vous reste " + reste + " essai(s)");
+                    }
+                }
+                System.out.println("L'ordianateur n'a pas réussi à trouver la combinaison secrète");
+                menuFinDeJeu();
+            }
 
     /**
      * Converti la combianaison secrète du joueur de String à int

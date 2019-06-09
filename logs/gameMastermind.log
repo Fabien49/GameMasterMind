@@ -1,38 +1,5 @@
-2019-06-06 22:55:59 INFO  Main:14 - Lancement du jeu
-2019-06-06 22:55:59 INFO  JeuRecherche:31 - Vous êtes dans le menu du jeu
-2019-06-06 22:56:03 INFO  JeuRechercheDefenseur:30 - Vous êtes dans le mode défenseur
-2019-06-06 22:56:03 INFO  JeuRechercheDefenseur:46 - Vous êtes en mode développeur
-2019-06-06 22:56:05 DEBUG JeuRechercheDefenseur:169 - la combinaison secrète du joueur est : [5, 5, 5, 5]
-2019-06-06 22:56:05 DEBUG JeuRechercheDefenseur:81 - le nombre de la combinaison est : 4
-2019-06-06 22:56:05 DEBUG JeuRechercheDefenseur:90 - La combinaison de l'ordinateur est : [1, 5, 8, 8]
-2019-06-06 22:56:05 DEBUG JeuRechercheDefenseur:98 - le nombre d'essai est : 10
-2019-06-06 22:56:12 DEBUG JeuRechercheDefenseur:187 - la réponse du joueur est : [-, =, +, +]
-2019-06-06 22:56:12 DEBUG JeuRechercheDefenseur:130 - La réponse de l'ordinateur est [2]
-2019-06-06 22:56:12 DEBUG JeuRechercheDefenseur:136 - La réponse de l'ordinateur est [2, 5]
-2019-06-06 22:56:12 DEBUG JeuRechercheDefenseur:133 - La réponse de l'ordinateur est [2, 5, 7]
-2019-06-06 22:56:12 DEBUG JeuRechercheDefenseur:133 - La réponse de l'ordinateur est [2, 5, 7, 7]
-2019-06-06 22:56:12 DEBUG JeuRechercheDefenseur:144 - La nouvelle combinaison de l'ordinateur est : [2, 5, 7, 7]
-2019-06-06 22:56:12 DEBUG JeuRechercheDefenseur:148 - Il reste : 9 essais
-2019-06-06 22:56:19 DEBUG JeuRechercheDefenseur:187 - la réponse du joueur est : [-, =, +, +]
-2019-06-06 22:56:19 DEBUG JeuRechercheDefenseur:130 - La réponse de l'ordinateur est [3]
-2019-06-06 22:56:19 DEBUG JeuRechercheDefenseur:136 - La réponse de l'ordinateur est [3, 5]
-2019-06-06 22:56:19 DEBUG JeuRechercheDefenseur:133 - La réponse de l'ordinateur est [3, 5, 6]
-2019-06-06 22:56:19 DEBUG JeuRechercheDefenseur:133 - La réponse de l'ordinateur est [3, 5, 6, 6]
-2019-06-06 22:56:19 DEBUG JeuRechercheDefenseur:144 - La nouvelle combinaison de l'ordinateur est : [3, 5, 6, 6]
-2019-06-06 22:56:19 DEBUG JeuRechercheDefenseur:148 - Il reste : 8 essais
-2019-06-06 22:56:24 DEBUG JeuRechercheDefenseur:187 - la réponse du joueur est : [-, =, +, +]
-2019-06-06 22:56:24 DEBUG JeuRechercheDefenseur:130 - La réponse de l'ordinateur est [4]
-2019-06-06 22:56:24 DEBUG JeuRechercheDefenseur:136 - La réponse de l'ordinateur est [4, 5]
-2019-06-06 22:56:24 DEBUG JeuRechercheDefenseur:133 - La réponse de l'ordinateur est [4, 5, 5]
-2019-06-06 22:56:24 DEBUG JeuRechercheDefenseur:133 - La réponse de l'ordinateur est [4, 5, 5, 5]
-2019-06-06 22:56:24 DEBUG JeuRechercheDefenseur:144 - La nouvelle combinaison de l'ordinateur est : [4, 5, 5, 5]
-2019-06-06 22:56:24 DEBUG JeuRechercheDefenseur:148 - Il reste : 7 essais
-2019-06-06 22:56:28 DEBUG JeuRechercheDefenseur:187 - la réponse du joueur est : [-, =, =, =]
-2019-06-06 22:56:28 DEBUG JeuRechercheDefenseur:130 - La réponse de l'ordinateur est [5]
-2019-06-06 22:56:28 DEBUG JeuRechercheDefenseur:136 - La réponse de l'ordinateur est [5, 5]
-2019-06-06 22:56:28 DEBUG JeuRechercheDefenseur:136 - La réponse de l'ordinateur est [5, 5, 5]
-2019-06-06 22:56:28 DEBUG JeuRechercheDefenseur:136 - La réponse de l'ordinateur est [5, 5, 5, 5]
-2019-06-06 22:56:28 DEBUG JeuRechercheDefenseur:144 - La nouvelle combinaison de l'ordinateur est : [5, 5, 5, 5]
-2019-06-06 22:56:28 DEBUG JeuRechercheDefenseur:148 - Il reste : 6 essais
-2019-06-06 22:56:33 DEBUG JeuRechercheDefenseur:187 - la réponse du joueur est : [=, =, =, =]
-2019-06-06 22:56:33 DEBUG JeuRechercheDefenseur:115 - L'ordinateur a trouvé la réponse : [5, 5, 5, 5] en 4 essais
+2019-06-09 11:44:46 INFO  Main:14 - Lancement du jeu
+2019-06-09 11:44:46 INFO  JeuRecherche:31 - Vous êtes dans le menu du jeu
+2019-06-09 11:44:48 INFO  JeuRechercheDefenseur:30 - Vous êtes dans le mode défenseur
+2019-06-09 11:44:48 INFO  JeuRechercheDefenseur:46 - Vous êtes en mode développeur
+2019-06-09 11:44:51 ERROR JeuRechercheDefenseur:66 - Erreur de saisie. Veuillez entrer des chiffres java.lang.NumberFormatException: For input string: "k"
