@@ -54,4 +54,40 @@ public class JeuRechercheMenu {
             }
         }
     }
+
+    /**
+     * Menu de fin du jeu
+     * Choix multiple:
+     *  - rejouer (RE)
+     *  - changer de mode (MO)
+     *  - quitter l'application (QU)
+     */
+
+    public static void menuFinDeJeu() {
+
+        System.out.println("Choisissez parmis les choix suivants : ");
+        System.out.println("Tapez RE pour rejouer");
+        System.out.println("Tapez MO pour choisir un autre mode");
+        System.out.println("Tapez QU pour quitter l'application");
+
+        Scanner sc = new Scanner(System.in);
+        String choice = sc.next();
+        boolean choixJeu = true;
+
+        while (choixJeu) {
+            if ("RE".equals(choice)) {
+                JeuRechercheChallenger jeuRechercheChallenger = new JeuRechercheChallenger();
+                JeuRechercheChallenger.rechercheChallenger();
+            } else if ("MO".equals(choice)) {
+                JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+                jeuRechercheMenu.rechercheMenu();
+            } else if ("QU".equals(choice)) {
+                System.exit(0);
+            } else {
+                System.out.println("Vous n'avez pas choisi parmi les choix proposés");
+                logger.warn("Vous n'avez pas choisi parmis les choix proposés");
+                choice = sc.next();
+            }
+        }
+    }
 }

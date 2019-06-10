@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a558a736-5662-4270-b91c-030ad5788fc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/gameMastermind.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gameMastermind.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheChallenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheChallenger.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,20 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="306">
+              <caret line="18" column="61" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,9 +33,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1598">
+              <caret line="121" column="56" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1216">
+            <state relative-caret-position="-2848">
               <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="1300">
+              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1819">
-              <caret line="305" column="56" lean-forward="true" selection-start-line="305" selection-start-column="56" selection-end-line="305" selection-end-column="56" />
+            <state relative-caret-position="646">
+              <caret line="212" column="26" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,9 +170,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" />
       </list>
     </option>
   </component>
@@ -415,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560124195264</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Renommer classe JeuRecherche en classe JeuRechercheMenu&#10;javadoc sur la classe Main">
+      <created>1560158602982</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560158602982</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -467,7 +470,8 @@
     <MESSAGE value="changer l'algo des résultats pour que l'ordi corrige sa combinaison en fonction de la réponse du joueur" />
     <MESSAGE value="changer les logs" />
     <MESSAGE value="try catch sur JeuRechercheChallenger et JeuRechercheDefenseur" />
-    <option name="LAST_COMMIT_MESSAGE" value="try catch sur JeuRechercheChallenger et JeuRechercheDefenseur" />
+    <MESSAGE value="Renommer classe JeuRecherche en classe JeuRechercheMenu&#10;javadoc sur la classe Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renommer classe JeuRecherche en classe JeuRechercheMenu&#10;javadoc sur la classe Main" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -887,18 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="305" column="56" lean-forward="true" selection-start-line="305" selection-start-column="56" selection-end-line="305" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="646">
+          <caret line="212" column="26" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -907,18 +901,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="1300">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -927,8 +911,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1216">
+        <state relative-caret-position="-2848">
           <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="121" column="56" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

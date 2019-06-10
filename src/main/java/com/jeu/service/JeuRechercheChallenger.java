@@ -118,7 +118,8 @@ public class JeuRechercheChallenger {
                         System.out.println("Bravo vous avez trouvé la combinaison secrète de l'ordinateur");
                         System.out.println("Vous avez trouvé la combinaison secrète en " + nbessais + " essai(s)");
                         logger.debug("Vous avez trouvé la combianison secrète de l'ordinateur qui est : " +combinaisonSecreteOrdi + " en "+ nbessais + " essais");
-                        menuFinDeJeu();
+                        JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+                        jeuRechercheMenu.menuFinDeJeu();
                         break;
 
                         }else{
@@ -149,7 +150,8 @@ public class JeuRechercheChallenger {
 
                     }
                     System.out.println("Dommage vous n'avez poas trouvé la combinaison secrète");
-                    menuFinDeJeu();
+                    JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+                    jeuRechercheMenu.menuFinDeJeu();
     }
 
 
@@ -171,42 +173,6 @@ public class JeuRechercheChallenger {
         logger.debug("La combinaison du joueur est : " +saisieJoueur);
         System.out.println("Affichage de la nouvelle liste de chiffre : " + saisieJoueur);
         return saisieJoueur;
-    }
-
-    /**
-     * Menu de fin du jeu
-     * Choix multiple:
-     *  - rejouer (RE)
-     *  - changer de mode (MO)
-     *  - quitter l'application (QU)
-     */
-
-    private static void menuFinDeJeu() {
-
-        System.out.println("Choisissez parmis les choix suivants : ");
-        System.out.println("Tapez RE pour rejouer");
-        System.out.println("Tapez MO pour choisir un autre mode");
-        System.out.println("Tapez QU pour quitter l'application");
-
-        Scanner sc = new Scanner(System.in);
-        String choice = sc.next();
-        boolean choixJeu = true;
-
-        while (choixJeu) {
-            if ("RE".equals(choice)) {
-                JeuRechercheChallenger jeuRechercheChallenger = new JeuRechercheChallenger();
-                JeuRechercheChallenger.rechercheChallenger();
-            } else if ("MO".equals(choice)) {
-                JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
-                jeuRechercheMenu.rechercheMenu();
-            } else if ("QU".equals(choice)) {
-                System.exit(0);
-            } else {
-                System.out.println("Vous n'avez pas choisi parmi les choix proposés");
-                logger.warn("Vous n'avez pas choisi parmis les choix proposés");
-                choice = sc.next();
-            }
-        }
     }
 }
 

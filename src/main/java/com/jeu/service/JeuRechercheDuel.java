@@ -118,7 +118,8 @@ public class JeuRechercheDuel {
                     System.out.println("" + nbsaisiJoueur);
                     System.out.println("Bravo vous avez trouvé la combinaison secrète de l'ordinateur");
                     System.out.println("Vous avez trouvé la combinaison secrète en " + nbessais + " essai(s)");
-                    menuFinDeJeu();
+                    JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+                    jeuRechercheMenu.menuFinDeJeu();
                 }
 
                 List<Integer> reponseOrdi = new ArrayList<Integer>();
@@ -169,7 +170,8 @@ public class JeuRechercheDuel {
                     System.out.println("Dommage vous avez perdu");
                     System.out.println("L'ordinateur a trouvé votre combinaison secrète en " + nbessais + " essai(s)");
                     System.out.println("La solution trouvé par l'ordinateur l'ordinateur est : " + reponseOrdi);
-                    menuFinDeJeu();
+                    JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+                    jeuRechercheMenu.menuFinDeJeu();
                     break;
                 }
 
@@ -210,7 +212,8 @@ public class JeuRechercheDuel {
 
             }
             System.out.println("Personne n'a trouvé la combinaison secrète");
-            menuFinDeJeu();
+            JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+            jeuRechercheMenu.menuFinDeJeu();
         }
 
 
@@ -285,34 +288,4 @@ public class JeuRechercheDuel {
         logger.debug("La réponse du joueur est : " +reponseHumain);
         return reponseHumain;
         }
-
-    public static void menuFinDeJeu() {
-
-        System.out.println("Choisissez parmis les choix suivants : ");
-        System.out.println("Tapez RE pour rejouer");
-        System.out.println("Tapez MO pour choisir un autre mode");
-        System.out.println("Tapez QU pour quitter l'application");
-
-        Scanner sc = new Scanner(System.in);
-        String choice = sc.next();
-
-        boolean choixJeu = true;
-
-        while (choixJeu) {
-            if ("RE".equals(choice)) {
-                JeuRechercheDefenseur jeuRechercheDefenseur = new JeuRechercheDefenseur();
-                jeuRechercheDefenseur.rechercheDefenseur();
-            } else if ("MO".equals(choice)) {
-                JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
-                jeuRechercheMenu.rechercheMenu();
-            } else if ("QU".equals(choice)) {
-                System.exit(0);
-            } else {
-                System.out.println("Vous n'avez pas choisi parmi les choix proposés");
-                logger.warn("Vous n'avez pas choisi parmis les choix proposés");
-                // il oblige l'utilisateur à rentrer son nouveau choix et arrête la boucle
-                choice = sc.next();
-            }
-        }
-    }
 }
