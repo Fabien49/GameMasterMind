@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a558a736-5662-4270-b91c-030ad5788fc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/gameMastermind.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gameMastermind.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/ihm/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/ihm/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRecherche.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheChallenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheChallenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDefenseur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDefenseur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDuel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDuel.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="121" column="56" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
+            <state relative-caret-position="2573">
+              <caret line="173" column="90" selection-start-line="173" selection-start-column="90" selection-end-line="173" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2848">
-              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+            <state relative-caret-position="465">
+              <caret line="223" column="5" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state relative-caret-position="528">
+              <caret line="59" column="113" selection-start-line="59" selection-start-column="113" selection-end-line="59" selection-end-column="113" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="212" column="26" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
+            <state relative-caret-position="4930">
+              <caret line="290" column="1" selection-start-line="290" selection-start-column="1" selection-end-line="290" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,11 +172,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/outils/Config.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" />
       </list>
     </option>
   </component>
@@ -418,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560158602982</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="menuFinDeJeu mit dans la classe JeuRechercheMenu et enlevé des 3 modes">
+      <created>1560159145133</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560159145133</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -434,7 +445,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -443,7 +454,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29685807" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.04442037" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40086675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,7 +482,8 @@
     <MESSAGE value="changer les logs" />
     <MESSAGE value="try catch sur JeuRechercheChallenger et JeuRechercheDefenseur" />
     <MESSAGE value="Renommer classe JeuRecherche en classe JeuRechercheMenu&#10;javadoc sur la classe Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renommer classe JeuRecherche en classe JeuRechercheMenu&#10;javadoc sur la classe Main" />
+    <MESSAGE value="menuFinDeJeu mit dans la classe JeuRechercheMenu et enlevé des 3 modes" />
+    <option name="LAST_COMMIT_MESSAGE" value="menuFinDeJeu mit dans la classe JeuRechercheMenu et enlevé des 3 modes" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -889,36 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="212" column="26" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2848">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -929,10 +911,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="223" column="5" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="121" column="56" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
+        <state relative-caret-position="2573">
+          <caret line="173" column="90" selection-start-line="173" selection-start-column="90" selection-end-line="173" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4930">
+          <caret line="290" column="1" selection-start-line="290" selection-start-column="1" selection-end-line="290" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="59" column="113" selection-start-line="59" selection-start-column="113" selection-end-line="59" selection-end-column="113" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

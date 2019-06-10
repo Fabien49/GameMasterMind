@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 /**
- * Cette classe contient le menu du jeu
+ * Cette classe contient le menu du début et la fin de jeu
  */
 
 public class JeuRechercheMenu {
@@ -57,10 +57,7 @@ public class JeuRechercheMenu {
 
     /**
      * Menu de fin du jeu
-     * Choix multiple:
-     *  - rejouer (RE)
-     *  - changer de mode (MO)
-     *  - quitter l'application (QU)
+     * L'utilisateur saisit son choix parmis ceux proposés pour rejouer, changer de mode ou quitter l'application
      */
 
     public static void menuFinDeJeu() {
