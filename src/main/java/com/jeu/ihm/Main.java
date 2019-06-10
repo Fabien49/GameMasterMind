@@ -19,6 +19,5 @@ public class Main {
                 JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
                 jeuRechercheMenu.rechercheMenu();
         }
-
 }
 

@@ -2,7 +2,6 @@ package com.jeu.service;
 
 import com.jeu.outils.Config;
 import org.apache.log4j.Logger;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -36,8 +35,8 @@ public class JeuRechercheDefenseur<menu> {
             System.out.println("Bienvenue dans le mode Defenseur");
 
             /*
-             * Mode développeur ou non en fonction du fochier confi.properties
-             * Si mode developpeur activé, indique qu'on est en mode dev
+             * Mode développeur ou non en fonction du fichier config.properties
+             * Si mode developpeur activé dans ce dernier, ça indique qu'on est en mode dev dans l'application
              */
 
             boolean configDeveloppeur = new Boolean(Config.getConfigValue("modeDeveloppeut"));

@@ -2,7 +2,6 @@ package com.jeu.service;
 
 import org.apache.log4j.Logger;
 import com.jeu.outils.Config;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -24,7 +23,6 @@ public class JeuRechercheDuel {
     private final static Logger logger = Logger.getLogger(JeuRechercheDuel.class);
 
     public JeuRechercheDuel(){
-
         }
 
         public static void rechercheDuel() {

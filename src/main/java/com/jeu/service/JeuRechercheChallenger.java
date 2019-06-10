@@ -2,7 +2,6 @@ package com.jeu.service;
 
 import com.jeu.outils.Config;
 import org.apache.log4j.Logger;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -19,9 +18,7 @@ import java.util.Scanner;
 
 public class JeuRechercheChallenger {
 
-
     private final static Logger logger = Logger.getLogger(JeuRechercheChallenger.class);
-
 
     public JeuRechercheChallenger() {
     }
