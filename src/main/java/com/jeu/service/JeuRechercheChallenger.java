@@ -197,8 +197,8 @@ public class JeuRechercheChallenger {
                 JeuRechercheChallenger jeuRechercheChallenger = new JeuRechercheChallenger();
                 JeuRechercheChallenger.rechercheChallenger();
             } else if ("MO".equals(choice)) {
-                JeuRecherche jeuRecherche = new JeuRecherche();
-                jeuRecherche.rechercheMenu();
+                JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+                jeuRechercheMenu.rechercheMenu();
             } else if ("QU".equals(choice)) {
                 System.exit(0);
             } else {

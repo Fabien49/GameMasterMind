@@ -1,5 +1,32 @@
-2019-06-09 11:44:46 INFO  Main:14 - Lancement du jeu
-2019-06-09 11:44:46 INFO  JeuRecherche:31 - Vous êtes dans le menu du jeu
-2019-06-09 11:44:48 INFO  JeuRechercheDefenseur:30 - Vous êtes dans le mode défenseur
-2019-06-09 11:44:48 INFO  JeuRechercheDefenseur:46 - Vous êtes en mode développeur
-2019-06-09 11:44:51 ERROR JeuRechercheDefenseur:66 - Erreur de saisie. Veuillez entrer des chiffres java.lang.NumberFormatException: For input string: "k"
+2019-06-10 10:44:05 INFO  Main:14 - Lancement du jeu
+2019-06-10 10:44:05 INFO  JeuRecherche:31 - Vous êtes dans le menu du jeu
+2019-06-10 10:44:11 INFO  JeuRechercheDuel:32 - Vous êtes dans le mode duel
+2019-06-10 10:44:11 DEBUG JeuRechercheDuel:60 - le nombre de la combinaison est : 4
+2019-06-10 10:44:14 DEBUG JeuRechercheDuel:230 - La combinaison secrète du joueur est : [4, 5, 6, 4]
+2019-06-10 10:44:14 DEBUG JeuRechercheDuel:82 - La combinaison secrète de l'ordinateur est [1, 6, 6, 2]
+2019-06-10 10:44:14 INFO  JeuRechercheDuel:89 - Vous êtes en mode développeur
+2019-06-10 10:44:46 DEBUG JeuRechercheDuel:264 - La combinaison du joueur est : [1, 6, 5, 3]
+2019-06-10 10:44:46 DEBUG JeuRechercheDuel:130 - le nombre de la combinaison est : 4
+2019-06-10 10:44:46 DEBUG JeuRechercheDuel:139 - La combinaison de l'ordinateur est [7, 0, 8, 1]
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:285 - La réponse du joueur est : [+, -, -, -]
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:159 - La réponse de l'ordinateur est : =
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:159 - La réponse de l'ordinateur est : ==
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:156 - La réponse de l'ordinateur est : ==-
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:153 - La réponse de l'ordinateur est : ==-+
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:164 - La réponse de l'ordinateur est : ==-+
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:186 - La réponse de l'ordinateur est [6]
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:183 - La réponse de l'ordinateur est [6, 1]
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:183 - La réponse de l'ordinateur est [6, 1, 9]
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:183 - La réponse de l'ordinateur est [6, 1, 9, 2]
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:194 - La combinaison de l'ordinateur est [6, 1, 9, 2]
+2019-06-10 10:45:11 DEBUG JeuRechercheDuel:198 - Il reste : 9 essais
+2019-06-10 10:45:57 DEBUG JeuRechercheDuel:285 - La réponse du joueur est : [1, 6, 6, 2]
+2019-06-10 10:46:09 DEBUG JeuRechercheDuel:264 - La combinaison du joueur est : [1, 6, 6, 2]
+2019-06-10 10:46:09 DEBUG JeuRechercheDuel:159 - La réponse de l'ordinateur est : =
+2019-06-10 10:46:09 DEBUG JeuRechercheDuel:159 - La réponse de l'ordinateur est : ==
+2019-06-10 10:46:09 DEBUG JeuRechercheDuel:159 - La réponse de l'ordinateur est : ===
+2019-06-10 10:46:09 DEBUG JeuRechercheDuel:159 - La réponse de l'ordinateur est : ====
+2019-06-10 10:46:09 DEBUG JeuRechercheDuel:164 - La réponse de l'ordinateur est : ====
+2019-06-10 10:46:09 DEBUG JeuRechercheDuel:194 - La combinaison de l'ordinateur est []
+2019-06-10 10:46:09 DEBUG JeuRechercheDuel:198 - Il reste : 8 essais
+2019-06-10 10:46:20 DEBUG JeuRechercheDuel:285 - La réponse du joueur est : [=, =, +, +]

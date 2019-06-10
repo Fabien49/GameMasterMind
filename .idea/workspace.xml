@@ -4,16 +4,12 @@
     <list default="true" id="a558a736-5662-4270-b91c-030ad5788fc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/gameMastermind.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/gameMastermind.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRecherche.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRecherche.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheChallenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheChallenger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDefenseur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDefenseur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDuel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jeu/service/JeuRechercheDuel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DefenseurTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Dueltest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Help2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="289">
               <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -52,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
+            <state relative-caret-position="-1216">
               <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,10 +61,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5185">
-              <caret line="311" column="28" selection-start-line="311" selection-start-column="28" selection-end-line="311" selection-end-column="28" />
+            <state relative-caret-position="1819">
+              <caret line="305" column="56" lean-forward="true" selection-start-line="305" selection-start-column="56" selection-end-line="305" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,12 +93,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="312">
-                <caret line="84" column="52" lean-forward="true" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+              <first_editor relative-caret-position="1428">
+                <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
               </first_editor>
               <second_editor />
             </state>
@@ -112,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/outils/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="34">
               <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -172,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Help2.java" />
         <option value="$PROJECT_DIR$/src/test/java/DefenseurTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/outils/Config.java" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -180,6 +175,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java" />
       </list>
     </option>
   </component>
@@ -194,7 +191,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,12 +201,75 @@
               <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
               <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jeu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jeu" type="462c0819:PsiDirectoryNode" />
+              <item name="ihm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jeu" type="462c0819:PsiDirectoryNode" />
+              <item name="outils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameMastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameMastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jeu" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559858240215</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="try catch sur JeuRechercheChallenger et JeuRechercheDefenseur">
+      <created>1560124195264</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560124195264</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -362,7 +431,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -370,8 +439,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29685807" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40086675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -397,7 +466,8 @@
     <MESSAGE value="javadoc" />
     <MESSAGE value="changer l'algo des résultats pour que l'ordi corrige sa combinaison en fonction de la réponse du joueur" />
     <MESSAGE value="changer les logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="changer les logs" />
+    <MESSAGE value="try catch sur JeuRechercheChallenger et JeuRechercheDefenseur" />
+    <option name="LAST_COMMIT_MESSAGE" value="try catch sur JeuRechercheChallenger et JeuRechercheDefenseur" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -447,8 +517,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/gameMastermind.log">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -788,26 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5185">
-          <caret line="311" column="28" selection-start-line="311" selection-start-column="28" selection-end-line="311" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -817,38 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/outils/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRecherche.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -858,10 +878,60 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="312">
-            <caret line="84" column="52" lean-forward="true" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+          <first_editor relative-caret-position="1428">
+            <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDuel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="305" column="56" lean-forward="true" selection-start-line="305" selection-start-column="56" selection-end-line="305" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheChallenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/ihm/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeu/service/JeuRechercheDefenseur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1216">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -246,8 +246,8 @@ public class JeuRechercheDefenseur<menu> {
                 JeuRechercheDefenseur jeuRechercheDefenseur = new JeuRechercheDefenseur();
                 jeuRechercheDefenseur.rechercheDefenseur();
             } else if ("MO".equals(choice)) {
-                JeuRecherche jeuRecherche = new JeuRecherche();
-                jeuRecherche.rechercheMenu();
+                JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+                jeuRechercheMenu.rechercheMenu();
             } else if ("QU".equals(choice)) {
                 System.exit(0);
             } else {

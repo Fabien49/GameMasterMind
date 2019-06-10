@@ -1,9 +1,12 @@
 package com.jeu.ihm;
 
-import com.jeu.outils.Config;
-import com.jeu.service.JeuRecherche;
+import com.jeu.service.JeuRechercheMenu;
 import org.apache.log4j.Logger;
 
+/**
+ * La classe Main sert à lancer l'application
+ * Elle envoit directement dans la classe JeuRechercheMenu
+ */
 
 public class Main {
 
@@ -13,12 +16,8 @@ public class Main {
 
         logger.info("Lancement du jeu");
 
-        String resultat = Config.getConfigValue("nbCombinaison");
-        System.out.println(resultat);
-
-                JeuRecherche jeuRecherche = new JeuRecherche();
-                jeuRecherche.rechercheMenu();
-
+                JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+                jeuRechercheMenu.rechercheMenu();
         }
 
 }

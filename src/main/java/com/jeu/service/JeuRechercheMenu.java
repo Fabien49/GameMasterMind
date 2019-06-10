@@ -9,11 +9,11 @@ import java.util.Scanner;
  * Cette classe contient le menu du jeu
  */
 
-public class JeuRecherche {
+public class JeuRechercheMenu {
 
-    private final static Logger logger = Logger.getLogger(JeuRecherche.class);
+    private final static Logger logger = Logger.getLogger(JeuRechercheMenu.class);
 
-    public JeuRecherche() {
+    public JeuRechercheMenu() {
     }
 
     /**
