@@ -102,7 +102,7 @@ public class JeuRechercheChallenger {
                 String nbsaisi = sc.next();
 
                 try {
-                    saisieJoueur = reponseJoueurList(nbsaisi);
+                    saisieJoueur = combiJoueurList(nbsaisi);
                     saisieOk = false;
                 } catch (NumberFormatException exception) {
                     logger.error("Erreur de saisie. Veuillez entrer des chiffres " + exception);
@@ -162,7 +162,7 @@ public class JeuRechercheChallenger {
      * @return
      */
 
-    private static List<Integer> reponseJoueurList(String saisie) {
+    private static List<Integer> combiJoueurList(String saisie) {
         List<Integer> saisieJoueur = new ArrayList<Integer>();
         for (char charact : saisie.toCharArray()) {
             String chainChar = String.valueOf(charact);
