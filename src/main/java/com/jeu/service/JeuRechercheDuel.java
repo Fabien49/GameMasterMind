@@ -60,6 +60,7 @@ public class JeuRechercheDuel {
         Scanner sc = new Scanner(System.in);
         String nbsaisi = sc.next();
         List<Integer> combinaisonSecreteJoueur = combiSecreteJoueurList(nbsaisi);
+        //TODO exceptions de saisis
 
         /*
          * Combinaison aléatoire de l'ordinateur
@@ -123,7 +124,7 @@ public class JeuRechercheDuel {
             boolean longueursaisie = true;
             String nbsaisiJoueur = new String();
             List<Integer> saisieHumain = new ArrayList<>();
-
+            //TODO exceptions de saisis try/catch
             while (longueursaisie) {
                 System.out.println("Veuillez saisir votre combinaison");
                 Scanner scan = new Scanner(System.in);
@@ -249,7 +250,7 @@ public class JeuRechercheDuel {
             configCombinaison = Integer.valueOf(Config.getConfigValue("nbCombinaison"));
         }
 
-
+        //TODO exceptions de saisis try/catch
         while (longueurReponse) {
             System.out.println("Merci de saisir votre réponse");
             Scanner sc = new Scanner(System.in);
@@ -257,7 +258,7 @@ public class JeuRechercheDuel {
             if (reponse.length() == configCombinaison) {
                 longueurReponse = false;
             } else {
-                System.out.println("Vous n'avez pas saisit la bonne longueur pour votre combinaison");
+                System.out.println("Vous n'avez pas saisit la bonne longueur pour votre réponse");
             }
             reponseHumain = changeList(reponse);
             logger.debug("La réponse du joueur est : " + reponseHumain);

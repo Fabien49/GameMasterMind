@@ -2,7 +2,6 @@ package com.jeu.service;
 
 import com.jeu.outils.Config;
 import org.apache.log4j.Logger;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -65,8 +64,9 @@ public class JeuRechercheDefenseur<menu> {
         boolean saisieOk = true;
         boolean saisiLongeur = true;
         while (saisieOk || saisiLongeur) {
-
-            System.out.println("Veuillez saisir votre combinaison secrète à 4 chiffres");
+            saisiLongeur = true;
+            saisieOk = true;
+            System.out.println("Veuillez saisir votre combinaison secrète à " + configCombinaison +" chiffres: ");
             Scanner sc = new Scanner(System.in);
             String nbsaisi = sc.next();
             if (nbsaisi.length() == configCombinaison) {
@@ -79,6 +79,7 @@ public class JeuRechercheDefenseur<menu> {
                 saisieOk = false;
             } catch (NumberFormatException exception) {
                 logger.error("Erreur de saisie. Veuillez entrer des chiffres " + exception);
+                System.out.println("Veuillez saisir des entiers entre 0 et 9");
             }
         }
 
@@ -89,7 +90,6 @@ public class JeuRechercheDefenseur<menu> {
         if (configDeveloppeur) {
             System.out.println("La combinaison secrète du joueur est : " + combinaisonSecreteJoueur);
         }
-
 
         List<Integer> combiOrdi = new ArrayList<Integer>();
         Random rand = new Random();
@@ -128,7 +128,7 @@ public class JeuRechercheDefenseur<menu> {
                 System.out.println("" + reponseJoueur);
                 System.out.println("Dommage vous avez perdu");
                 System.out.println("L'ordinateur a trouvé votre combinaison secrète en " + nbessais + " essai(s)");
-                System.out.println("La solution trouvé par l'ordinateur l'ordinateur est : " + combiOrdi);
+                System.out.println("La solution trouvé par l'ordinateur est : " + combiOrdi);
                 logger.debug("L'ordinateur a trouvé la réponse : " + combiOrdi + " en " + nbessais + " essais");
                 findejeu = false;
                 break;
@@ -225,7 +225,7 @@ public class JeuRechercheDefenseur<menu> {
         List<String> reponseHumain = new ArrayList<String>();
 
         System.out.println("Merci de saisir votre réponse");
-
+        //TODO exceptions de saisis try/catch + longueur saisie
         Scanner sc = new Scanner(System.in);
         String reponse = sc.next();
         reponseHumain = changeList(reponse);

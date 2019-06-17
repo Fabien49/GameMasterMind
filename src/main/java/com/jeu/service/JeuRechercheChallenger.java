@@ -91,7 +91,7 @@ public class JeuRechercheChallenger {
          * Boucle permettant que le joueur rentre sa comnbinaison et que l'ordinateur donne sa réponse tant que le nombre d'essai est > 0
          * Si la combinaison du joueur est égale à la combinaison de l'ordinateur, ça carrête la boucle et propose le menu de fin de jeu
          */
-
+        //TODO exceptions de saisis longueur saisie
         while (nbessais < confNbEssai) {
 
             boolean saisieOk = true;
