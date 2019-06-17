@@ -19,6 +19,8 @@ public class JeuRechercheMenu {
     /**
      * Cette methode est le menu de l'application
      * L'utilisateur saisit son choix parmis ceux proposés pour rentrer dans l'un des modes.
+     *
+     * @param
      */
 
     public static void rechercheMenu() {
@@ -32,7 +34,6 @@ public class JeuRechercheMenu {
 
         Scanner sc = new Scanner(System.in);
         String choice = sc.next();
-
 
         boolean choixMode = true;
 
@@ -55,36 +56,5 @@ public class JeuRechercheMenu {
         }
     }
 
-    /**
-     * Menu de fin du jeu
-     * L'utilisateur saisit son choix parmis ceux proposés pour rejouer, changer de mode ou quitter l'application
-     */
 
-    public static void menuFinDeJeu() {
-
-        System.out.println("Choisissez parmis les choix suivants : ");
-        System.out.println("Tapez RE pour rejouer");
-        System.out.println("Tapez MO pour choisir un autre mode");
-        System.out.println("Tapez QU pour quitter l'application");
-
-        Scanner sc = new Scanner(System.in);
-        String choice = sc.next();
-        boolean choixJeu = true;
-
-        while (choixJeu) {
-            if ("RE".equals(choice)) {
-                JeuRechercheChallenger jeuRechercheChallenger = new JeuRechercheChallenger();
-                JeuRechercheChallenger.rechercheChallenger();
-            } else if ("MO".equals(choice)) {
-                JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
-                jeuRechercheMenu.rechercheMenu();
-            } else if ("QU".equals(choice)) {
-                System.exit(0);
-            } else {
-                System.out.println("Vous n'avez pas choisi parmi les choix proposés");
-                logger.warn("Vous n'avez pas choisi parmis les choix proposés");
-                choice = sc.next();
-            }
-        }
-    }
 }

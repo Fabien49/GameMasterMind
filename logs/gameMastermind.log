@@ -1,9 +1,2 @@
-2019-06-10 11:28:25 INFO  Main:17 - Lancement du jeu
-2019-06-10 11:28:25 INFO  JeuRechercheMenu:31 - Vous êtes dans le menu du jeu
-2019-06-10 11:28:28 INFO  JeuRechercheChallenger:31 - Vous êtes dans le mode Challenger
-2019-06-10 11:28:28 DEBUG JeuRechercheChallenger:57 - le nombre de la combinaison est : 4
-2019-06-10 11:28:28 DEBUG JeuRechercheChallenger:67 - La combinaison secrète de l'ordinateur est : [3, 9, 2, 7]
-2019-06-10 11:28:28 INFO  JeuRechercheChallenger:76 - Vous êtes en mode développeur
-2019-06-10 11:28:28 DEBUG JeuRechercheChallenger:85 - le nombre d'essai est : 10
-2019-06-10 11:28:32 DEBUG JeuRechercheChallenger:173 - La combinaison du joueur est : [3, 9, 2, 7]
-2019-06-10 11:28:32 DEBUG JeuRechercheChallenger:120 - Vous avez trouvé la combianison secrète de l'ordinateur qui est : [3, 9, 2, 7] en 0 essais
+2019-06-17 10:13:25 INFO  Main:17 - Lancement du jeu
+2019-06-17 10:13:25 INFO  JeuRechercheMenu:33 - Vous êtes dans le menu du jeu
