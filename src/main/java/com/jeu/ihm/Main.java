@@ -16,8 +16,9 @@ public class Main {
 
         logger.info("Lancement du jeu");
 
-                JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
-                jeuRechercheMenu.rechercheMenu();
-        }
+        JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
+        jeuRechercheMenu.rechercheMenu();
+
+    }
 }
 

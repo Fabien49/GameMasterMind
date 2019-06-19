@@ -24,8 +24,10 @@ public class JeuRechercheMenu {
      */
 
     public static void rechercheMenu() {
-        System.out.println("Bienvenue dans le jeu Recherche +/-");
-        System.out.println("Choisissez votre mode");
+        System.out.println("");
+        System.out.println("*****  Bienvenue dans le jeu Recherche +/-  *****");
+        System.out.println("");
+        System.out.println("Choisissez votre mode:");
         System.out.println("CH - Challenger");
         System.out.println("DE - Defenseur");
         System.out.println("DU - Duel");
@@ -40,13 +42,13 @@ public class JeuRechercheMenu {
         while (choixMode) {
             if ("CH".equals(choice)) {
                 JeuRechercheChallenger jeuRechercheChallenger = new JeuRechercheChallenger();
-                jeuRechercheChallenger.rechercheChallenger();
+                jeuRechercheChallenger.JeuRechercheChallenger();
             } else if ("DE".equals(choice)) {
                 JeuRechercheDefenseur jeuRechercheDefenseur = new JeuRechercheDefenseur();
-                jeuRechercheDefenseur.rechercheDefenseur();
+                jeuRechercheDefenseur.JeuRechercheDefenseur();
             } else if ("DU".equals(choice)) {
                 JeuRechercheDuel jeuRechercheDuel = new JeuRechercheDuel();
-                jeuRechercheDuel.rechercheDuel();
+                jeuRechercheDuel.JeuRechercheDuel();
             } else {
                 System.out.println("Vous n'avez pas choisi parmi les choix proposés");
                 // il oblige l'utilisateur rentre son nouveau choix et arrête la boucle
@@ -55,6 +57,4 @@ public class JeuRechercheMenu {
             }
         }
     }
-
-
 }

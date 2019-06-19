@@ -76,13 +76,17 @@ Le joueur et l’intelligence artificielle de l’ordinateur jouent tour à tour
 ##Pré-requis pour lancer le projet
 
 La version Java 1.8 minimum est requise pour lancer l'application
+Pour builder il faut installer maven v3
 
 ## Description de l'arborescence du livrable
 
+## Fabrication du package de livraison
+Se placer à la racine de l'arborescence du projet (au niveau du pom.xml) et taper la commande maven: 
+- mvn clean install
 
 ## Lancement du jeu
-
-Le lancement du jeu se fait à partir du fichier .jar
+Depuis le répertoire de livraison Projet3FabienDAJava/binaireexecutable
+- Tapez java -jar game.jar
 
 ## Lien vers GitHub
 

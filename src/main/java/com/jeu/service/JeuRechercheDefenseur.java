@@ -2,6 +2,7 @@ package com.jeu.service;
 
 import com.jeu.outils.Config;
 import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -17,16 +18,17 @@ import java.util.Scanner;
  * - Il y a un nombre limité d’essais.
  */
 
-public class JeuRechercheDefenseur<menu> {
+public class JeuRechercheDefenseur {
 
     private final static Logger logger = Logger.getLogger(JeuRechercheDefenseur.class);
 
     public JeuRechercheDefenseur() {
     }
 
-    public static void rechercheDefenseur() {
+    public void JeuRechercheDefenseur() {
 
         logger.info("Vous êtes dans le mode défenseur");
+
 
         /**
          * Menu
@@ -43,7 +45,7 @@ public class JeuRechercheDefenseur<menu> {
             configCombinaison = Integer.valueOf(Config.getConfigValue("nbCombinaison"));
         }
 
-        logger.debug("le nombre de la combinaison est : " + configCombinaison);
+        logger.debug("La longueur de la combinaison est : " + configCombinaison);
 
         /*
          * Mode développeur ou non en fonction du fichier config.properties
@@ -57,16 +59,17 @@ public class JeuRechercheDefenseur<menu> {
         }
 
         /*
-         * Création de la liste de l'ordinateur "combinaisonSecreteJoueur avec la collection d'arraylist"
-         * Creation de chiffres aléatoire et insertion dans la liste créée
+         * Création d'une iste pour la combinaison secrète du joueur
+         * Boucle while pour condition de saisis: longueur par rapport à la longueur de la combinaison et exception pour si différent de chiffre         *
          */
+
         List<Integer> combinaisonSecreteJoueur = new ArrayList<>();
         boolean saisieOk = true;
         boolean saisiLongeur = true;
         while (saisieOk || saisiLongeur) {
             saisiLongeur = true;
             saisieOk = true;
-            System.out.println("Veuillez saisir votre combinaison secrète à " + configCombinaison +" chiffres: ");
+            System.out.println("Veuillez saisir votre combinaison secrète à " + configCombinaison + " chiffres: ");
             Scanner sc = new Scanner(System.in);
             String nbsaisi = sc.next();
             if (nbsaisi.length() == configCombinaison) {
@@ -75,11 +78,11 @@ public class JeuRechercheDefenseur<menu> {
                 System.out.println("Vous n'avez pas saisit la bonne longueur pour votre combinaison");
             }
             try {
-                combinaisonSecreteJoueur = combiJoueurList(nbsaisi);
+                combinaisonSecreteJoueur = combiSecreteJoueurList(nbsaisi);
                 saisieOk = false;
             } catch (NumberFormatException exception) {
                 logger.error("Erreur de saisie. Veuillez entrer des chiffres " + exception);
-                System.out.println("Veuillez saisir des entiers entre 0 et 9");
+                System.out.println("Veuillez saisir des chiffres entre 0 et 9");
             }
         }
 
@@ -90,6 +93,11 @@ public class JeuRechercheDefenseur<menu> {
         if (configDeveloppeur) {
             System.out.println("La combinaison secrète du joueur est : " + combinaisonSecreteJoueur);
         }
+
+        /*
+         * Création de la liste de l'ordinateur "combinaisonSecreteJoueur avec la collection d'arraylist"
+         * Creation de chiffres aléatoire et insertion dans la liste créée
+         */
 
         List<Integer> combiOrdi = new ArrayList<Integer>();
         Random rand = new Random();
@@ -123,6 +131,7 @@ public class JeuRechercheDefenseur<menu> {
 
         while (nbessais < confNbEssai) {
 
+            // Verifie si la combinaison de l'ordinateur est égale à la combinaison secrète du joueur
             if (combinaisonSecreteJoueur.equals(combiOrdi)) {
                 List<String> reponseJoueur = saisieReponseJoueur(combiOrdi, combinaisonSecreteJoueur);
                 System.out.println("" + reponseJoueur);
@@ -137,6 +146,7 @@ public class JeuRechercheDefenseur<menu> {
                 List<String> reponseJoueur = saisieReponseJoueur(combiOrdi, combinaisonSecreteJoueur);
                 List<Integer> newList = new ArrayList<Integer>();
 
+                // Boucle permettant à l'ordinateur d'ajuster sa combinaison en fonction de la réponse du joueur
                 for (int i = 0; i < reponseJoueur.size(); i++) {
 
                     int valeurMoins = combiOrdi.get(i) + 1;
@@ -167,21 +177,19 @@ public class JeuRechercheDefenseur<menu> {
             }
         }
         if (findejeu) {
-            logger.debug("L'ordinateur n'a pas la réponse");
-            System.out.println("L'ordinateur n'a pas la réponse");
+            logger.debug("L'ordinateur n'a pas trouvé votre combinaison secrète");
+            System.out.println("L'ordinateur n'a pas trouvé votre combinaison secrète");
         }
-
         menuFinDeJeu();
     }
 
     /**
-     * Converti la combianaison secrète du joueur de String à int
-     *
+     * Converti la combianaison secrète du joueur de String en int
      * @param saisie
      * @return
      */
 
-    private static List<Integer> combiJoueurList(String saisie) {
+    private static List<Integer> combiSecreteJoueurList(String saisie) {
         List<Integer> combinaisonSecreteJoueur = new ArrayList<Integer>();
         for (char charact : saisie.toCharArray()) {
             String chainChar = String.valueOf(charact);
@@ -195,7 +203,6 @@ public class JeuRechercheDefenseur<menu> {
 
     /**
      * Appel de la saisie de la réponse du joueur pour la mettre en chaine de caracteère dans la liste reponseJoueur
-     *
      * @param saisie
      * @return
      */
@@ -215,7 +222,7 @@ public class JeuRechercheDefenseur<menu> {
     /**
      * Appel de la métodhe scanner pour l'entrée de la réponse du joueur
      * Appel de la methode changeList pour la mettre dans la liste reponse Humain
-     *
+     * Condition pour que la longueur de la saisie soit aussi longue que celle de la configuration
      * @param combiOrdi
      * @param combinaisonSecreteJoueur
      * @return
@@ -223,20 +230,37 @@ public class JeuRechercheDefenseur<menu> {
 
     private static List<String> saisieReponseJoueur(List<Integer> combiOrdi, List<Integer> combinaisonSecreteJoueur) {
         List<String> reponseHumain = new ArrayList<String>();
+        String reponse = new String();
+        boolean longueurReponse = true;
 
-        System.out.println("Merci de saisir votre réponse");
-        //TODO exceptions de saisis try/catch + longueur saisie
-        Scanner sc = new Scanner(System.in);
-        String reponse = sc.next();
-        reponseHumain = changeList(reponse);
+        String configString = Config.getConfigValue("nbCombinaison");
+        int configCombinaison = 0;
+
+        if (configString.equals("")) {
+            configCombinaison = 4;
+        } else {
+            configCombinaison = Integer.valueOf(Config.getConfigValue("nbCombinaison"));
+        }
+        while (longueurReponse) {
+            System.out.println("Merci de saisir votre réponse");
+            Scanner sc = new Scanner(System.in);
+            reponse = sc.next();
+            if (reponse.length() == configCombinaison) {
+                longueurReponse = false;
+            } else {
+                System.out.println("Vous n'avez pas saisit la bonne longueur pour votre réponse");
+            }
+            reponseHumain = changeList(reponse);
+            logger.debug("La réponse du joueur est : " + reponseHumain);
+        }
 
         return reponseHumain;
     }
 
+
     /**
      * Menu de fin du jeu
      * L'utilisateur saisit son choix parmis ceux proposés pour rejouer, changer de mode ou quitter l'application
-     *
      * @param
      */
 
@@ -254,7 +278,7 @@ public class JeuRechercheDefenseur<menu> {
         while (choixJeu) {
             if ("RE".equals(choice)) {
                 JeuRechercheDefenseur jeuRechercheDefenseur = new JeuRechercheDefenseur();
-                jeuRechercheDefenseur.rechercheDefenseur();
+                jeuRechercheDefenseur.JeuRechercheDefenseur();
             } else if ("MO".equals(choice)) {
                 JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
                 jeuRechercheMenu.rechercheMenu();

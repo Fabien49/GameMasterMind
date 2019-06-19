@@ -23,7 +23,7 @@ public class JeuRechercheDuel {
     public JeuRechercheDuel() {
     }
 
-    public static void rechercheDuel() {
+    public void JeuRechercheDuel() {
 
         logger.info("Vous êtes dans le mode duel");
 
@@ -55,12 +55,28 @@ public class JeuRechercheDuel {
 
         logger.debug("le nombre de la combinaison est : " + configCombinaison);
 
-        System.out.println("Veuillez saisir votre combinaison secrète à " + configCombinaison + " chiffres : ");
-
-        Scanner sc = new Scanner(System.in);
-        String nbsaisi = sc.next();
-        List<Integer> combinaisonSecreteJoueur = combiSecreteJoueurList(nbsaisi);
-        //TODO exceptions de saisis
+        List<Integer> combinaisonSecreteJoueur = new ArrayList<>();
+        boolean saisieOk = true;
+        boolean saisiLongeur = true;
+        while (saisieOk || saisiLongeur) {
+            saisiLongeur = true;
+            saisieOk = true;
+            System.out.println("Veuillez saisir votre combinaison secrète à " + configCombinaison + " chiffres: ");
+            Scanner sc = new Scanner(System.in);
+            String nbsaisi = sc.next();
+            if (nbsaisi.length() == configCombinaison) {
+                saisiLongeur = false;
+            } else {
+                System.out.println("Vous n'avez pas saisit la bonne longueur pour votre combinaison");
+            }
+            try {
+                combinaisonSecreteJoueur = combiSecreteJoueurList(nbsaisi);
+                saisieOk = false;
+            } catch (NumberFormatException exception) {
+                logger.error("Erreur de saisie. Veuillez entrer des chiffres " + exception);
+                System.out.println("Veuillez saisir des entiers entre 0 et 9");
+            }
+        }
 
         /*
          * Combinaison aléatoire de l'ordinateur
@@ -93,17 +109,11 @@ public class JeuRechercheDuel {
         int reste = 0;
         int confNbEssai = Integer.valueOf(Config.getConfigValue("nbEssai"));
 
-        /*
-         * Boucle permettant que le joueur et l'ordinateur rentrent leur comnbinaison respective et que chacun donnent sa réponse tant que le nombre d'essai est > 0
-         * Si la combinaison du joueur est égale à la combinaison de l'ordinateur et /ou que la combinaison de l'ordianteur est égale à la combinaison secrète de l'ordinateur,
-         * ça carrête la boucle et propose le menu de fin de jeu
-         */
-
         List<Integer> combiOrdi = new ArrayList<Integer>();
         List<String> reponseJoueur = new ArrayList<>();
+
         boolean findejeu = true;
-        //newList est une liste tampon pour  pouvoir modifier la combinaisson de l'ordinateur en fonction de la réponse du joueur
-        List<Integer> newList = new ArrayList<Integer>();
+
 
         String reponseOrdi = new String();
 
@@ -119,25 +129,43 @@ public class JeuRechercheDuel {
             //System.out.println("La Combinaison de l'ordinateur est " +reponseOrdi);
         }
 
+        List<Integer> saisieHumain;
+
+        /*
+         * Boucle permettant que le joueur et l'ordinateur rentrent leur comnbinaison respective et que chacun donnent sa réponse tant que le nombre d'essai est > 0
+         * Si la combinaison du joueur est égale à la combinaison de l'ordinateur et /ou que la combinaison de l'ordianteur est égale à la combinaison secrète de l'ordinateur,
+         * ça carrête la boucle et propose le menu de fin de jeu
+         */
+
         while (nbessais < confNbEssai) {
 
-            boolean longueursaisie = true;
+            saisieOk = true;
+            boolean saisiLongueur = true;
             String nbsaisiJoueur = new String();
-            List<Integer> saisieHumain = new ArrayList<>();
-            //TODO exceptions de saisis try/catch
-            while (longueursaisie) {
+
+            while (saisieOk || saisiLongueur) {
+
                 System.out.println("Veuillez saisir votre combinaison");
                 Scanner scan = new Scanner(System.in);
                 nbsaisiJoueur = scan.next();
                 if (nbsaisiJoueur.length() == configCombinaison) {
-                    longueursaisie = false;
+                    saisiLongueur = false;
                 } else {
                     System.out.println("Vous n'avez pas saisit la bonne longueur pour votre combinaison");
                 }
+                try {
+                    saisieHumain = saisieCombiJoueur(nbsaisiJoueur);
+                    saisieOk = false;
+                } catch (NumberFormatException exception) {
+                    logger.error("Erreur de saisie. Veuillez entrer des chiffres " + exception);
+                    System.out.println("Veuillez entrer des chiffres");
+                }
             }
             saisieHumain = saisieCombiJoueur(nbsaisiJoueur);
-            System.out.println("La Combinaison de l'ordinateur est " + combiOrdi);
+            System.out.println("La combinaison du joueur est : " + saisieHumain);
+            System.out.println("La combinaison de l'ordinateur est " + combiOrdi);
 
+            // Verifie si la combinaison du joueur est égale à la combinaison secrète de l'ordinateur
             if (combinaisonSecreteOrdi.equals(saisieHumain)) {
                 System.out.println("Bravo vous avez trouvé la combinaison secrète de l'ordinateur : " + saisieHumain);
                 System.out.println("Vous avez trouvé la combinaison secrète en " + nbessais + " essai(s)");
@@ -145,8 +173,8 @@ public class JeuRechercheDuel {
                 findejeu = false;
                 break;
             }
+            // Verifie si la combinaison de l'ordinateur est égale à la combinaison secrète du joueur
             if (combinaisonSecreteJoueur.equals(combiOrdi)) {
-                System.out.println("" + reponseJoueur);
                 System.out.println("Dommage vous avez perdu");
                 System.out.println("L'ordinateur a trouvé votre combinaison secrète en " + nbessais + " essai(s)");
                 System.out.println("La solution trouvé par l'ordinateur l'ordinateur est : " + combiOrdi);
@@ -156,7 +184,12 @@ public class JeuRechercheDuel {
             }
 
             reponseJoueur = saisieReponseJoueur();
+            System.out.println("La réponse du joueur est : " + reponseJoueur);
 
+            //newList est une liste tampon pour  pouvoir modifier la combinaisson de l'ordinateur en fonction de la réponse du joueur
+            List<Integer> newList = new ArrayList<Integer>();
+
+            // Boucle permettant à l'ordinateur d'ajuster sa combinaison en fonction de la réponse du joueur
             for (int n = 0; n < reponseJoueur.size(); n++) {
 
                 int valeurMoins = combiOrdi.get(n) + 1;
@@ -177,6 +210,7 @@ public class JeuRechercheDuel {
             combiOrdi.addAll(newList);
             newList.clear();
 
+            // Bouble permettant de générer la réponse de l'ordinateur
             for (int k = 0; k < combinaisonSecreteOrdi.size(); k++) {
 
                 if (combinaisonSecreteOrdi.get(k) < saisieHumain.get(k)) {
@@ -212,7 +246,6 @@ public class JeuRechercheDuel {
 
     /**
      * Converti la combianaison secrète du joueur de String à Integer
-     *
      * @param saisie
      * @return
      */
@@ -225,14 +258,14 @@ public class JeuRechercheDuel {
             combinaisonSecreteJoueur.add(chiffre);
         }
         logger.debug("La combinaison secrète du joueur est : " + combinaisonSecreteJoueur);
-        //System.out.println("La combinaison secrète est : " + combinaisonSecreteJoueur);
         return combinaisonSecreteJoueur;
     }
 
 
     /**
      * Appel de la métodhe scanner pour l'entrée de la réponse du joueur
-     *
+     * Condition pour que la longueur soit égale à la longueur de la configuration
+     * Condition pour que la longueur de la saisie soit aussi longue que celle de la configuration
      * @return
      */
 
@@ -250,7 +283,6 @@ public class JeuRechercheDuel {
             configCombinaison = Integer.valueOf(Config.getConfigValue("nbCombinaison"));
         }
 
-        //TODO exceptions de saisis try/catch
         while (longueurReponse) {
             System.out.println("Merci de saisir votre réponse");
             Scanner sc = new Scanner(System.in);
@@ -263,13 +295,11 @@ public class JeuRechercheDuel {
             reponseHumain = changeList(reponse);
             logger.debug("La réponse du joueur est : " + reponseHumain);
         }
-
         return reponseHumain;
     }
 
     /**
      * Pour mettre de List à chaine de caractère dans la Liste reponseJoueur
-     *
      * @param saisie
      * @return
      */
@@ -284,8 +314,7 @@ public class JeuRechercheDuel {
     }
 
     /**
-     * methode pour convertir de String à Integer
-     *
+     * methode pour convertir de String en Integer
      * @param saisie
      * @return
      */
@@ -297,14 +326,12 @@ public class JeuRechercheDuel {
             saisieHumain.add(chiffre);
         }
         logger.debug("La combinaison du joueur est : " + saisieHumain);
-        System.out.println("La combinaison du joueur est : " + saisieHumain);
         return saisieHumain;
     }
 
     /**
      * Menu de fin du jeu
      * L'utilisateur saisit son choix parmis ceux proposés pour rejouer, changer de mode ou quitter l'application
-     *
      * @param
      */
 
@@ -322,7 +349,7 @@ public class JeuRechercheDuel {
         while (choixJeu) {
             if ("RE".equals(choice)) {
                 JeuRechercheDuel jeuRechercheDuel = new JeuRechercheDuel();
-                jeuRechercheDuel.rechercheDuel();
+                jeuRechercheDuel.JeuRechercheDuel();
             } else if ("MO".equals(choice)) {
                 JeuRechercheMenu jeuRechercheMenu = new JeuRechercheMenu();
                 jeuRechercheMenu.rechercheMenu();
