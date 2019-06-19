@@ -74,7 +74,7 @@ public class JeuRechercheChallenger {
             System.out.println("La combinaison de l'ordinateur est : " + combinaisonSecreteOrdi);
         }
 
-        int nbessais = 0;
+        int nbessais = 1;
         int reste = 0;
         int confNbEssai = Integer.valueOf(Config.getConfigValue("nbEssai"));
         boolean findejeu = true;
@@ -138,9 +138,9 @@ public class JeuRechercheChallenger {
                 }
 
                 System.out.println("");
-                System.out.println(saisieJoueur);
+                System.out.println("La combinaison du joueur est : " +saisieJoueur);
                 logger.debug("La réponse de l'ordinateur est : " + reponseOrdi);
-                System.out.println(reponseOrdi);
+                System.out.println("La réponse de l'ordinateur est : " +reponseOrdi);
                 nbessais++;
                 reste = confNbEssai - nbessais;
                 logger.debug("La réponse de l'ordinateur est : " + reste);
@@ -169,7 +169,6 @@ public class JeuRechercheChallenger {
             saisieJoueur.add(chiffre);
         }
         logger.debug("La combinaison du joueur est : " + saisieJoueur);
-        System.out.println("Affichage de la nouvelle liste de chiffre : " + saisieJoueur);
         return saisieJoueur;
     }
 

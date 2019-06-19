@@ -1,2 +1,22 @@
-2019-06-19 14:37:02 INFO  Main:17 - Lancement du jeu
-2019-06-19 14:37:02 INFO  JeuRechercheMenu:35 - Vous êtes dans le menu du jeu
+2019-06-19 14:43:00 INFO  Main:17 - Lancement du jeu
+2019-06-19 14:43:00 INFO  JeuRechercheMenu:35 - Vous êtes dans le menu du jeu
+2019-06-19 14:43:04 INFO  JeuRechercheChallenger:28 - Vous êtes dans le mode Challenger
+2019-06-19 14:43:04 DEBUG JeuRechercheChallenger:53 - le nombre de la combinaison est : 4
+2019-06-19 14:43:04 DEBUG JeuRechercheChallenger:63 - La combinaison secrète de l'ordinateur est : [5, 6, 3, 7]
+2019-06-19 14:43:04 DEBUG JeuRechercheChallenger:82 - le nombre d'essai est : 10
+2019-06-19 14:43:06 DEBUG JeuRechercheChallenger:171 - La combinaison du joueur est : [4, 5, 4, 5]
+2019-06-19 14:43:06 DEBUG JeuRechercheChallenger:133 - La réponse de l'ordinateur est : -
+2019-06-19 14:43:06 DEBUG JeuRechercheChallenger:133 - La réponse de l'ordinateur est : --
+2019-06-19 14:43:06 DEBUG JeuRechercheChallenger:130 - La réponse de l'ordinateur est : --+
+2019-06-19 14:43:06 DEBUG JeuRechercheChallenger:133 - La réponse de l'ordinateur est : --+-
+2019-06-19 14:43:06 DEBUG JeuRechercheChallenger:142 - La réponse de l'ordinateur est : --+-
+2019-06-19 14:43:06 DEBUG JeuRechercheChallenger:146 - La réponse de l'ordinateur est : 8
+2019-06-19 14:43:13 DEBUG JeuRechercheChallenger:171 - La combinaison du joueur est : [5, 6, 3, 6]
+2019-06-19 14:43:13 DEBUG JeuRechercheChallenger:136 - La réponse de l'ordinateur est : =
+2019-06-19 14:43:13 DEBUG JeuRechercheChallenger:136 - La réponse de l'ordinateur est : ==
+2019-06-19 14:43:13 DEBUG JeuRechercheChallenger:136 - La réponse de l'ordinateur est : ===
+2019-06-19 14:43:13 DEBUG JeuRechercheChallenger:133 - La réponse de l'ordinateur est : ===-
+2019-06-19 14:43:13 DEBUG JeuRechercheChallenger:142 - La réponse de l'ordinateur est : ===-
+2019-06-19 14:43:13 DEBUG JeuRechercheChallenger:146 - La réponse de l'ordinateur est : 7
+2019-06-19 14:43:17 DEBUG JeuRechercheChallenger:171 - La combinaison du joueur est : [5, 6, 3, 7]
+2019-06-19 14:43:17 DEBUG JeuRechercheChallenger:122 - Vous avez trouvé la combianison secrète de l'ordinateur qui est : [5, 6, 3, 7] en 3 essais
